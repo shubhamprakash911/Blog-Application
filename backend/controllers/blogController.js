@@ -28,13 +28,15 @@ const updateBlog = asyncHandler(async (req, res) => {
   // Find the blog by ID
   const blog = await Blog.findByPk(blogId);
 
+  console.log(blog);
+
   // Check if the blog exists
   if (!blog) {
     res.status(404);
     throw new Error("User not found");
   }
 
-  const updatedBlog = await Blog.update({
+  const updatedBlog = await blog.update({
     title: title || blog.title,
     category: category || blog.category,
     content: content || blog.content,

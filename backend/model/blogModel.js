@@ -11,8 +11,10 @@ const Blog = sequelize.define("Blog", {
       "Technology",
       "Politics",
       "Geography",
-      "Current Affairs"
+      "Current Affairs",
+      "General"
     ),
+    defaultValue: "General",
     allowNull: false,
   },
   content: {
