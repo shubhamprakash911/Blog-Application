@@ -1,6 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const sequelize = require("./config/db");
+const {
+  errorHandler,
+  notFound,
+} = require("./middlewares/errorHandlerMiddleware");
+const blogRoute = require("./routes/blogRoutes");
 
 const app = express();
 
@@ -12,7 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Welcome to Blog application");
 });
+
+app.use("/blog", blogRoute);
+
 const PORT = process.env.PORT || 8000;
+
+//error handler middlewares
+app.use(notFound);
+app.use(errorHandler);
 
 async function conn() {
   try {
