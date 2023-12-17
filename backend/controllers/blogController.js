@@ -16,7 +16,7 @@ const createBlog = asyncHandler(async (req, res) => {
 
 // delete a blog
 const deleteBlog = asyncHandler(async (req, res) => {
-  const deletedBlog = await Blog.destroy({ where: { id: req.params.id } });
+  const deletedBlog = await Blog.destroy({ where: { id: req.params.blogId } });
   res.json({ message: "A blog successfully deleted", data: deletedBlog });
 });
 
