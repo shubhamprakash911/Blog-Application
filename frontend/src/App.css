@@ -1,0 +1,100 @@
+.blogCont {
+  border: 1px solid #ddd; /* Add a border for separation */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  padding: 20px; /* Add padding for better spacing */
+  margin: 10px; /* Add margin for spacing between blogs */
+  width: 30%; /* Set the width to 30% for three blogs per row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: inline-block; /* Display blogs in a row */
+  vertical-align: top; /* Align the top of each blog */
+}
+
+.blogCont h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blogCont p {
+  margin-bottom: 15px;
+}
+
+.blogCont h4 {
+  color: #888;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+/* navbar */ /* Navbar styles */
+nav {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Link styles */
+.title,
+.create {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover,
+.create:hover {
+  color: #66c2ff; /* Change the color on hover */
+}
+
+/* createpage
+ */
+/* styles.css (or your preferred CSS file) */
+
+.createPageCont {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createPageCont h2 {
+  color: #333;
+}
+
+.createPageCont form {
+  display: flex;
+  flex-direction: column;
+}
+
+.createPageCont label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.createPageCont input,
+textarea,
+select {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.createPageCont button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createPageCont button:hover {
+  background-color: #45a049;
+}
