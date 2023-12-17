@@ -6,8 +6,11 @@ const {
   notFound,
 } = require("./middlewares/errorHandlerMiddleware");
 const blogRoute = require("./routes/blogRoutes");
-
+const cors = require("cors");
 const app = express();
+
+//cors
+app.use(cors());
 
 //body parser
 app.use(express.json());
